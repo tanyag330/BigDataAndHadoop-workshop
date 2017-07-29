@@ -1,0 +1,16 @@
+4 Free Weather Providers API To Develop A Weather App
+Posted by: Francesco Azzola  in Android Core January 21st, 2016
+
+Android apps that give weather information are common in play store. Moreover, Weather app and widgets are one of the most downloaded items.
+When it is time to develop weather app, it is necessary to use a weather provider as the source of weather information. These weather providers expose a set of services or, in other words, a set of API that supports RestFul Webservices.
+Most of these services accept XML or JSON data. It is important to know the service features before selecting the right provider according to our needs.
+I compiled, below, a list of weather providers that I used and tested. This list can be useful if other developers want to develop an Android weather app.
+Openweathermap
+This is the first provider I have ever used and this is my preferred one. Openweathermap gives current weather information and forecasts. It is very simple to use. Openweathermap weather API uses JSON data to exchange data.
+The weather API returns current weather, forecast, historical weather information and weather station data. Moreover, it has also UV index data.
+How can we get weather information for a selected location? Openweathermap provides different two modes to look for a city. One uses name pattern and another using geo-coordinates.
+I developed an Android weather app based on Openweathermap and you can look at my other posts to know more how to develop in Android this app.
+All these API are free to use, you have to create a dev key so that you can make requests.
+Yahoo! Weather
+Yahoo! Weather is another great weather provider that is also very simple to use even if it gives less information than Openweathermap. Using Yahoo! Weather, the app can get current weather information and forecast. The API are based on JSON or on XML, so the developer can choose which one to use.
+It is free service as long as you use your app for not commercial use. Read Yahoo! Weather policy to know more. If you like to use this provider in your app, you can look at my post describing how to develop an Android app with Yahoo! weather.

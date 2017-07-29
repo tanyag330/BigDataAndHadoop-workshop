@@ -1,0 +1,11 @@
+All files and material for this course (Course Number DW612, title InfoSphere BigInsights;
+Course Number DW642, title InfoSphere BigInsights Analytics for Business Analysts;
+Course Number DW653, title InfoSphere BigInsights Analytics for Programmers) are 
+IBM copyright property covered by the following copyright notice.
+
+ (c) Copyright IBM Corp. 2012, 2013
+
+US Government Users Restricted Rights - Use duplication or
+disclosure restricted by GSA ADP Schedule Contract with
+IBM Corp.
+

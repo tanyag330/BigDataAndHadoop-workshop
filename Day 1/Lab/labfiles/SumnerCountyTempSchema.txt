@@ -1,0 +1,20 @@
+All files and material for this course (Course Number DW612, title InfoSphere BigInsights Foundation)
+are IBM copyright property covered by the following copyright notice.
+
+ (c) Copyright IBM Corp. firstyr, updatedyr
+
+US Government Users Restricted Rights - Use duplication or
+disclosure restricted by GSA ADP Schedule Contract with
+IBM Corp.
+
+
+
+
+File contains temperature information for Sumner County Tennessee for the year 2010.
+
+Date - Position 18 for 8 
+Year - Position 18 for 4.
+Month - Position 22 for 2.
+Day - Position 24 for 2.
+
+Daily Average Temp - Position 95 for 3.  Values need to be multiplied by 10, ie  456 is 45.6 degrees.

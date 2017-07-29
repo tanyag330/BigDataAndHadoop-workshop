@@ -1,0 +1,52 @@
+Use JUnit’s expected exceptions sparingly
+Posted by: Lukas Eder  in Core Java January 21st, 2016
+
+Sometimes, when we get pull requests for jOOQ or our other libraries, people change the code in our unit tests to be more “idiomatic JUnit”. In particular, this means that they tend to change this (admittedly not so pretty code):
+01
+@Test
+02
+public void testValueOfIntInvalid() {
+03
+    try {
+04
+        ubyte((UByte.MIN_VALUE) - 1);
+05
+        fail();
+06
+    }
+07
+    catch (NumberFormatException e) {}
+08
+    try {
+09
+        ubyte((UByte.MAX_VALUE) + 1);
+10
+        fail();
+11
+    }
+12
+    catch (NumberFormatException e) {}
+13
+}
+… into this, “better” and “cleaner” version:
+1
+@Test(expected = NumberFormatException.class)
+2
+public void testValueOfShortInvalidCase1() {
+3
+    ubyte((short) ((UByte.MIN_VALUE) - 1));
+4
+}
+5
+ 
+6
+@Test(expected = NumberFormatException.class)
+7
+public void testValueOfShortInvalidCase2() {
+8
+    ubyte((short) ((UByte.MAX_VALUE) + 1));
+9
+}
+What have we gained?
+Nothing!
+Sure, we already have to use the @Test annotation, so we might as well use its attribute expected right? I claim that this is completely wrong. For two reasons. And when I say “two”, I mean “four”:
