@@ -1,9 +1,0 @@
-#Tue Aug 20 22:11:31 EDT 2013
-srcTextAnalyticsPath=[P]textAnalytics/src
-general.provenance=true
-pagination.isEnabled=true
-tamTextAnalyticsPath=[P]textAnalytics/bin
-searchPath.dataPath=[W]/BIMaxTemp
-UseModularAQL=true
-pagination.numFilesPerPage=50
-langWare.tokenizerChoice=1
